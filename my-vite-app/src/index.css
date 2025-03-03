@@ -1,0 +1,95 @@
+@import 'tailwindcss';
+
+.footer {
+  @apply
+      flex
+      object-scale-down
+      h-1/10
+      xl:min-h-[120px]
+      bg-[#F8F8F8];
+}
+
+.footer-adds {
+  @apply
+    relative
+    flex
+    w-full
+    lg:w-auto
+    lg:mx-2
+    lg:flex-col;
+}
+
+.footer-link {
+  @apply  
+      text-[8px]
+      mx-2 
+      lg:text-xs
+    text-gray-600;
+}
+
+.footer-adds-print {
+  @apply
+      text-[8px]
+      mt-1
+      peer-focus:hidden
+      transition-all
+      duration-300
+      font-[raleway]
+      font-thin
+      text-[#2D2D2F]
+      md:text-xs
+      xl:text-sm
+      md:mb-2
+      mx-2;
+}
+
+.footer-adds-icons {
+  @apply
+    max-lg:absolute
+    max-lg:top-0
+    max-lg:hidden
+    max-lg:left-0
+    max-lg:size-fit
+    max-lg:p-1
+    peer-focus:relative
+    peer-focus:block
+    peer-focus:-translate-y-2
+    peer-focus:translate-x-1
+    peer-focus:border-2
+    peer-focus:rounded-lg
+    peer-focus:border-blue-600
+    transition-all
+    duration-300;
+}
+
+.footer-adds-btn {
+  @apply
+    grow-0
+    focus:text-blue-600
+    focus:font-bold
+    focus:text-lg
+    focus:-translate-y-0.5
+    transition-all
+    duration-100
+    lg:hidden;
+}
+
+.footer-head {
+  @apply
+    flex
+    w-1/2
+    md:w-full
+    text-sm
+    font-['Montserrat']
+    font-bold
+    text-[#2D2D2F]
+    mt-4
+    ml-6
+    lg:text-3xl
+    lg:ml-16;
+}
+
+#root {
+  width: fit-content;
+  height: fit-content;
+}
